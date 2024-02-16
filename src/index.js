@@ -4,47 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import LeaderBoardPage from './pages/LeaderBoardPage';
-import ProjectsPage from './pages/ProjectsPage';
-import ProjectPage from './pages/ProjectPage';
-import FarmingPage from './pages/FarmingPage';
-import TradePage from './pages/TradePage';
-import LendPage from './pages/LendPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path: '/nothingfinance',
-    element: <ProjectsPage />
+    path: '/nothing-finance',
+    element: <App />
   },
   {
     path: '/',
-    element: <ProjectsPage />
-  },
-  {
-    path: '/projects',
-    element: <ProjectsPage />
-  },
-  {
-    path: '/project/:id',
-    element: <ProjectPage />
-  },
-  {
-    path: '/leaderboard/:id',
-    element: <LeaderBoardPage />
-  },
-  {
-    path: '/farm',
-    element: <FarmingPage />
-  },
-  {
-    path: '/trade',
-    element: <TradePage />
-  },
-  {
-    path: '/lend',
-    element: <LendPage />
+    element: <App />
   },
 ]);
 
